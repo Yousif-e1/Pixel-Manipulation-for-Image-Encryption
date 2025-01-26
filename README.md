@@ -2,16 +2,16 @@
 - This Program performs a simple encryption and decryption on an image by swapping the red and green channels of each pixel.
 
 # Here's a breakdown of how it works:
-1 Loading the Image:**
+1) Loading the Image:**
    - The `load_image(image_path)` function opens an image using `PIL.Image.open()` and converts it into RGB format. Then it uses `numpy.array()` to get the pixel data in a NumPy array, where each pixel is represented by three values (for Red, Green, and Blue channels).
 
-2 Encryption:**
+2) Encryption:**
    - In the `encrypt(pixels)` function, the red and green color channels of the image pixels are swapped. This creates a basic "encryption" by altering the pixel colors without affecting the blue channel.
 
-3 Decryption:**
+3) Decryption:**
    - The `decrypt(encrypted_pixels)` function simply swaps the red and green channels back to their original state, undoing the encryption.
 
-4 Saving the Image:**
+4) Saving the Image:**
    - The `save_image(pixels, output_path)` function takes the modified pixels, converts them back into an image using `Image.fromarray()`, and saves the result using `.save()`.
 
 # Example of the process:
